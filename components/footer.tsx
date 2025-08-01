@@ -21,11 +21,11 @@ export const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          <span className="text-purple">Let's Build Something Amazing Together</span>
+          <span className="text-purple">Let&apos;s Build Something Amazing Together</span>
         </h1>
 
         <p className="my-5 text-center text-white-200 md:mt-10">
-          Ready to turn your ideas into digital reality? Let's connect and create something extraordinary.
+          Ready to turn your ideas into digital reality? Let&apos;s connect and create something extraordinary.
         </p>
 
         <div className="flex flex-col items-center gap-4 sm:flex-row">

@@ -18,7 +18,7 @@ export const Clients = () => {
                 height={29}
                 width={43}
                 src={img}
-                alt={`${name}'s logo`}
+                alt={`${name}&apos;s logo`}
                 className="w-5 md:w-10"
               />
 

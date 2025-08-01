@@ -24,10 +24,10 @@ export const Hero = () => {
       <div className="relative z-10 flex min-h-screen w-full items-center justify-center bg-black-100 bg-grid-white/[0.02] bg-cover bg-center bg-no-repeat">
         <div className="flex w-full max-w-[89rem] flex-col items-center justify-center px-4 lg:px-0">
           <p className="mb-4 max-w-2xl text-center text-base !leading-relaxed text-body-color md:text-lg lg:text-base">
-            Welcome to my portfolio! I'm a passionate Full Stack Developer
+            Welcome to my portfolio! I&apos;m a passionate Full Stack Developer
           </p>
           <h1 className="mb-8 text-center text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
               {links.ownerName}
             </span>
