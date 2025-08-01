@@ -8,7 +8,7 @@ import { links } from "@/config";
 
 export const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="relative min-h-screen pb-20 pt-36">
       <div>
         <Spotlight
           className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"
@@ -21,33 +21,32 @@ export const Hero = () => {
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.2] dark:bg-black-100 dark:bg-grid-white/[0.03]">
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-      </div>
-
-      <div className="relative z-10 my-20 flex justify-center">
-        <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
-          <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100">
-            Full Stack Web Developer
-          </h2>
+      <div className="relative z-10 flex min-h-screen w-full items-center justify-center bg-black-100 bg-grid-white/[0.02] bg-cover bg-center bg-no-repeat">
+        <div className="flex w-full max-w-[89rem] flex-col items-center justify-center px-4 lg:px-0">
+          <p className="mb-4 max-w-2xl text-center text-base !leading-relaxed text-body-color md:text-lg lg:text-base">
+            Welcome to my portfolio! I'm a passionate Full Stack Developer
+          </p>
+          <h1 className="mb-8 text-center text-4xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+              {links.ownerName}
+            </span>
+          </h1>
 
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Building Modern Web Experiences"
+            words="Full Stack Developer skilled in ReactJS, Node.js, and UI/UX design. Passionate about building scalable, responsive, and user-friendly web applications."
+            className="mb-8 text-center text-base !leading-relaxed text-body-color md:text-lg lg:text-base"
           />
 
-          <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Hi, I&apos;m {links.ownerName}, a passionate developer creating innovative web solutions.
-          </p>
-
-          <Link href="#about" className="md:mt-10">
-            <MagicButton
-              title="View my work"
-              icon={<FaLocationArrow />}
-              position="right"
-              asChild
-            />
-          </Link>
+          <div className="flex flex-col items-center gap-4 sm:flex-row">
+            <Link href={links.github} target="_blank">
+              <MagicButton
+                title="View My Work"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

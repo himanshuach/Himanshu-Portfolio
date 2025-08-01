@@ -16,7 +16,7 @@ export const RecentProjects = () => {
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-x-24 gap-y-8 p-4">
         {projects.map(
-          ({ id, des, iconLists, img, link, sourceCode, title }) => (
+          ({ id, des, iconLists, img, link, title }) => (
             <div
               key={id}
               className="flex h-[32rem] w-[90vw] items-center justify-center sm:h-[41rem] sm:w-[570px] lg:min-h-[32.5rem]"
@@ -72,12 +72,12 @@ export const RecentProjects = () => {
 
                   <div className="flex items-center justify-center">
                     <Link
-                      href={sourceCode}
+                      href={link}
                       target="_blank"
                       rel="noreferrer noopener"
                       className="flex text-sm text-purple md:text-xs lg:text-xl"
                     >
-                      Source Code
+                      View Project
                     </Link>
 
                     <FaLocationArrow className="ms-3" color="#cbacf9" />

@@ -4,7 +4,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { MagicButton } from "@/components/ui/magic-button";
 import { links } from "@/config";
-import { socialMedia } from "@/data";
+import { socialLinks } from "@/data";
 
 export const Footer = () => {
   return (
@@ -21,40 +21,56 @@ export const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          <span className="text-purple">Imagine, Create & Inspire</span>
+          <span className="text-purple">Let's Build Something Amazing Together</span>
         </h1>
 
         <p className="my-5 text-center text-white-200 md:mt-10">
-          Let&apos;s turn your ideas into digital reality - together.
+          Ready to turn your ideas into digital reality? Let's connect and create something extraordinary.
         </p>
 
-        <Link
-          href={`mailto:${links.ownerEmail}`}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="md:mt-10"
-        >
-          <MagicButton
-            title="Kickstart Your Idea"
-            icon={<FaLocationArrow />}
-            position="right"
-            asChild
-          />
-        </Link>
+        <div className="flex flex-col items-center gap-4 sm:flex-row">
+          <Link
+            href={`mailto:${links.ownerEmail}`}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="md:mt-10"
+          >
+            <MagicButton
+              title="Get In Touch"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </Link>
+          <Link
+            href={`tel:${links.phone}`}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="md:mt-10"
+          >
+            <MagicButton
+              title="Call Me"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </Link>
+        </div>
       </div>
 
       <div className="relative z-[999] mt-16 flex flex-col items-center justify-between md:flex-row">
-        <p className="text-sm font-light md:text-base md:font-normal">
-          Copyright &copy; {new Date().getFullYear()}{" "}
-            Himanshu
-          |{" "}
-          <Link href={links.sourceCode} className="underline">
-            Source Code
-          </Link>
-        </p>
+        <div className="text-center md:text-left">
+          <p className="text-sm font-light md:text-base md:font-normal">
+            Copyright &copy; {new Date().getFullYear()} {links.ownerName} |{" "}
+            <Link href={links.sourceCode} className="underline">
+              Source Code
+            </Link>
+          </p>
+          <p className="mt-2 text-xs text-white-200">
+            {links.ownerEmail} | {links.phone}
+          </p>
+        </div>
 
         <div className="flex items-center gap-6 md:gap-3">
-          {socialMedia.map((profile) => (
+          {socialLinks.map((profile) => (
             <Link
               key={profile.name}
               href={profile.link}
@@ -64,7 +80,7 @@ export const Footer = () => {
               title={profile.name}
             >
               <Image
-                src={profile.img}
+                src={profile.icon}
                 alt={`profile-${profile.name}`}
                 width={20}
                 height={20}

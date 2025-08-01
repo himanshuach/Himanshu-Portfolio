@@ -10,9 +10,9 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    title: "Full Stack Developer skilled in ReactJS, Node.js, and UI/UX design",
+    description: "Passionate about building scalable, responsive, and user-friendly web applications",
+    className: "lg:col-span-4 md:col-span-4 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -22,7 +22,7 @@ export const gridItems = [
     id: 2,
     title: "I'm very flexible with time zone communications",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 md:col-span-2 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -31,8 +31,8 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    description: "Always learning and exploring new technologies",
+    className: "lg:col-span-2 md:col-span-2 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -40,9 +40,9 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    title: "Passionate about creating innovative solutions",
+    description: "Building modern web applications with cutting-edge technologies",
+    className: "lg:col-span-2 md:col-span-2 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
@@ -50,10 +50,9 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Currently working on exciting projects",
-    subtitle: "Full Stack Development",
-    description: "Building modern web applications with cutting-edge technologies.",
-    className: "md:col-span-3 md:row-span-2",
+    title: "Currently working on Chat App using MERN Stack",
+    description: "Real-time messaging with user authentication and group chats",
+    className: "lg:col-span-4 md:col-span-4 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
     img: "/b5.svg",
@@ -61,11 +60,11 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Let's start a project journey together",
+    title: "Want to start a project together?",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-2 md:row-span-1",
     imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName: "flex justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
   },
@@ -74,90 +73,51 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    des: "A full-stack e-commerce platform with user authentication, payment integration, and admin dashboard.",
+    title: "Chat-App",
+    des: "A real-time chat application built with MERN stack featuring user authentication, real-time messaging, group chats, and modern UI/UX design. Includes features like message encryption, file sharing, and responsive design.",
     img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "#",
-    sourceCode: "#",
+    iconLists: ["/re.svg", "/ts.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Chat-App",
   },
   {
     id: 2,
-    title: "Task Management App",
-    des: "A collaborative task management application with real-time updates and team collaboration features.",
+    title: "KopyKitabh",
+    des: "A comprehensive e-commerce platform for book purchases with advanced features including product catalog, shopping cart, user authentication, payment integration, and admin dashboard for inventory management.",
     img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "#",
-    sourceCode: "#",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/KopyKitabh",
   },
   {
     id: 3,
-    title: "Portfolio Website",
-    des: "A modern portfolio website with 3D animations and interactive elements built with Next.js and Three.js.",
+    title: "LocalAIAgent",
+    des: "An intelligent AI agent with RAG (Retrieval-Augmented Generation) implementation for local AI processing, knowledge retrieval, and natural language understanding with custom training capabilities.",
     img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "#",
-    sourceCode: "#",
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/LocalAIAgent",
   },
   {
     id: 4,
-    title: "Weather Dashboard",
-    des: "A weather dashboard with real-time data, interactive maps, and responsive design for mobile and desktop.",
+    title: "Teach-Do-It",
+    des: "An interactive educational platform featuring learning modules, progress tracking, quizzes, and gamified learning experiences. Built with modern web technologies for optimal user engagement.",
     img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "#",
-    sourceCode: "#",
-  },
-] as const;
-
-export const testimonials = [
-  {
-    quote: `Working with ${links.ownerName} was an excellent experience. His attention to detail and technical expertise helped deliver a project that exceeded our expectations.`,
-    name: "Sarah Johnson",
-    title: "Project Manager at TechCorp",
-  },
-  {
-    quote: `${links.ownerName} demonstrated exceptional problem-solving skills and delivered high-quality code that was both maintainable and scalable.`,
-    name: "Michael Chen",
-    title: "Senior Developer at InnovateLab",
-  },
-  {
-    quote: `The collaboration with ${links.ownerName} was smooth and professional. He consistently met deadlines and provided valuable insights throughout the project.`,
-    name: "Emily Rodriguez",
-    title: "Product Owner at StartupXYZ",
-  },
-] as const;
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Teach-Do-It",
   },
   {
     id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    title: "Bluechat",
+    des: "A modern real-time chat application with sleek UI/UX design, featuring instant messaging, user profiles, message history, and cross-platform compatibility for seamless communication.",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/ts.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Bluechat",
+  },
+  {
+    id: 6,
+    title: "Reminder_app",
+    des: "A feature-rich reminder application built with Flutter, offering task management, notifications, categories, priority levels, and beautiful Material Design interface for enhanced productivity.",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Reminder-App",
   },
 ] as const;
 
@@ -165,35 +125,182 @@ export const workExperience = [
   {
     id: 1,
     title: "Frontend Developer",
-    desc: "Developed responsive web applications using React.js and modern frontend technologies.",
+    desc: "Led the development of United Tours India's complete web platform, enhancing UI/UX by redesigning 20+ pages with Tailwind CSS. Implemented SEO optimization strategies using modern React toolkits, resulting in improved search engine rankings. Built a 100% functional web solution using React.js, delivering exceptional user experience. Optimized page performance by 30% through advanced JavaScript techniques and React optimization, significantly improving load times and user engagement.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Full Stack Developer",
-    desc: "Built end-to-end web applications with Node.js, React, and MongoDB.",
+    title: "Designing Intern",
+    desc: "Enhanced UI/UX design for 5+ client projects, achieving 30% improvement in user engagement metrics through innovative design solutions. Implemented strategic design enhancements that boosted website performance and user retention by 20%. Designed and developed 20+ responsive web pages with modern design principles, maintaining a 95% client satisfaction rate. Collaborated with cross-functional teams to deliver high-quality design solutions that exceeded client expectations.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
 ] as const;
 
-export const socialMedia = [
+export const socialLinks = [
   {
     name: "GitHub",
-    img: "/git.svg",
+    icon: "/git.svg",
     link: "https://github.com/himanshuach",
   },
   {
     name: "LinkedIn",
-    img: "/link.svg",
-    link: "https://www.linkedin.com/in/r-himanshu",
+    icon: "/twit.svg",
+    link: "https://linkedin.com/in/himanshuach",
+  },
+  {
+    name: "LeetCode",
+    icon: "/insta.svg",
+    link: "https://leetcode.com/himanshuach",
   },
 ] as const;
 
-export const techStack = {
-  stack1: ["JavaScript", "React.js", "Next.js", "TypeScript"],
-  stack2: ["Node.js", "Express.js", "MongoDB"],
-  stack3: ["Tailwind CSS", "Three.js", "Framer Motion"],
-  stack4: ["Git", "Figma", "Postman", "Docker"]
-} as const;
+export const clients = [
+  {
+    id: 1,
+    name: "United Tours India",
+    img: "/c.svg",
+    nameImg: "/cloudName.svg",
+  },
+  {
+    id: 2,
+    name: "Achilyon",
+    img: "/c.svg",
+    nameImg: "/cloudName.svg",
+  },
+] as const;
+
+export const approach = [
+  {
+    id: "01",
+    title: "Discuss the project idea",
+    description:
+      "We begin by thoroughly understanding your project requirements, goals, and vision to ensure we're aligned on the desired outcome.",
+    className: "md:col-span-3 lg:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+  {
+    id: "02",
+    title: "Research and planning",
+    description:
+      "I conduct comprehensive research on the latest technologies and best practices to create an optimal solution architecture.",
+    className: "md:col-span-3 lg:col-span-2",
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: "03",
+    title: "Development and testing",
+    description:
+      "I develop the solution using modern technologies while maintaining high code quality and comprehensive testing throughout the process.",
+    className: "md:col-span-3 lg:col-span-2",
+    thumbnail: "/exp3.svg",
+  },
+  {
+    id: "04",
+    title: "Deployment and maintenance",
+    description:
+      "I ensure smooth deployment and provide ongoing maintenance and support to keep your application running optimally.",
+    className: "md:col-span-3 lg:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
+] as const;
+
+export const recentProjects = [
+  {
+    id: "1",
+    title: "Chat-App",
+    des: "Real-time messaging application with user authentication and group chat functionality using MERN stack",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/ts.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Chat-App",
+  },
+  {
+    id: "2",
+    title: "KopyKitabh",
+    des: "E-commerce platform for book purchases with comprehensive product management",
+    img: "/p2.svg",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/KopyKitabh",
+  },
+  {
+    id: "3",
+    title: "LocalAIAgent",
+    des: "Local AI agent with RAG implementation for knowledge retrieval and processing",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/LocalAIAgent",
+  },
+  {
+    id: "4",
+    title: "Teach-Do-It",
+    des: "Educational website with interactive learning modules and content",
+    img: "/p4.svg",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Teach-Do-It",
+  },
+  {
+    id: "5",
+    title: "Bluechat",
+    des: "Modern real-time chat application with responsive design",
+    img: "/p1.svg",
+    iconLists: ["/re.svg", "/ts.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Bluechat",
+  },
+  {
+    id: "6",
+    title: "Reminder_app",
+    des: "Flutter-based reminder app with clean UI and task management features",
+    img: "/p3.svg",
+    iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
+    link: "https://github.com/himanshuach/Reminder-App",
+  },
+] as const;
+
+export const skills = [
+  {
+    id: 1,
+    title: "Frontend",
+    skills: ["React", "HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"],
+  },
+  {
+    id: 2,
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "REST APIs", "MongoDB"],
+  },
+  {
+    id: 3,
+    title: "Languages",
+    skills: ["C++", "C", "JavaScript", "Dart", "Python"],
+  },
+  {
+    id: 4,
+    title: "Tools & Platforms",
+    skills: ["Git", "Postman", "VS Code", "Firebase"],
+  },
+] as const;
+
+export const education = [
+  {
+    id: 1,
+    institution: "Chandigarh University",
+    degree: "BE in Computer Science and Engineering",
+    duration: "July 2021 – May 2025",
+    coursework: "DSA, Operating Systems, Computer Networks, System Design",
+  },
+] as const;
+
+export const certifications = [
+  {
+    id: 1,
+    name: "ReactJs Certification by Infosys - SpringBoard",
+  },
+  {
+    id: 2,
+    name: "CSS3 Certification by Infosys - SpringBoard",
+  },
+  {
+    id: 3,
+    name: "JavaScript Certification by Infosys - SpringBoard",
+  },
+] as const;

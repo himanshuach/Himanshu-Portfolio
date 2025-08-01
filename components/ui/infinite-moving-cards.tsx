@@ -3,8 +3,14 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import { testimonials } from "@/data";
 import { cn } from "@/lib/utils";
+
+interface MovingCardItem {
+  id: string | number;
+  title: string;
+  description: string;
+  image?: string;
+}
 
 export const InfiniteMovingCards = ({
   items,
@@ -13,7 +19,7 @@ export const InfiniteMovingCards = ({
   pauseOnHover = true,
   className,
 }: {
-  items: typeof testimonials;
+  items: MovingCardItem[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
   pauseOnHover?: boolean;
@@ -96,7 +102,7 @@ export const InfiniteMovingCards = ({
               backgroundColor:
                 "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
-            key={idx}
+            key={item.id || idx}
           >
             <blockquote>
               <div
@@ -104,7 +110,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               />
               <span className=" relative z-20 text-sm font-normal leading-[1.6] text-white md:text-lg">
-                {item.quote}
+                {item.description}
               </span>
 
               <div className="relative z-20 mt-6 flex flex-row items-center">
@@ -112,17 +118,13 @@ export const InfiniteMovingCards = ({
                   <Image
                     height={50}
                     width={50}
-                    src="/profile.svg"
+                    src={item.image || "/profile.svg"}
                     alt="profile"
                   />
                 </div>
 
                 <div className="flex flex-col gap-1">
                   <span className="text-xl font-bold leading-[1.6] text-white">
-                    {item.name}
-                  </span>
-
-                  <span className=" text-sm font-normal leading-[1.6] text-white-200">
                     {item.title}
                   </span>
                 </div>

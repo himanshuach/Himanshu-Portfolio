@@ -6,7 +6,7 @@ import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
 
 import { links } from "@/config";
-import { techStack } from "@/data";
+import { skills } from "@/data";
 import animationData from "@/data/confetti.json";
 import { cn } from "@/lib/utils";
 
@@ -25,7 +25,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-5",
+        "mx-auto grid max-w-7xl grid-cols-1 gap-4 md:grid-cols-6 lg:grid-cols-6",
         className
       )}
     >
@@ -99,13 +99,13 @@ export const BentoGridItem = ({
 
         <div
           className={cn(
-            "absolute right-0 -mb-5",
-            id === 5 && "w-full opacity-80"
+            "absolute -bottom-72 left-0 min-h-96 w-full",
+            id === 5 && "bottom-0"
           )}
         >
           {spareImg && (
             <Image
-              width={208}
+              width={220}
               height={96}
               src={spareImg}
               alt={spareImg}
@@ -135,7 +135,7 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="absolute -right-3 flex w-fit gap-1 lg:-right-2 lg:gap-5">
               <div className="flex flex-col gap-3 lg:gap-8">
-                {techStack.stack1.map((item) => (
+                {skills[0]?.skills.slice(0, 3).map((item) => (
                   <span
                     key={item}
                     className="rounded-lg bg-[#10132e] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
@@ -149,7 +149,7 @@ export const BentoGridItem = ({
 
               <div className="flex flex-col gap-3 lg:gap-8">
                 <span className="rounded-lg bg-[#10132e] px-3 py-4 text-center" />
-                {techStack.stack2.map((item) => (
+                {skills[1]?.skills.slice(0, 3).map((item) => (
                   <span
                     key={item}
                     className="rounded-lg bg-[#10132e] px-3 py-2 text-center text-xs opacity-50 lg:px-3 lg:py-4 lg:text-base lg:opacity-100"
