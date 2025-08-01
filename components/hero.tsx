@@ -28,21 +28,21 @@ export const Hero = () => {
       <div className="relative z-10 my-20 flex justify-center">
         <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
           <h2 className="max-w-80 text-center text-xs uppercase tracking-widest text-blue-100">
-            Dynamic Web Magic with Next.js
+            Full Stack Web Developer
           </h2>
 
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Building Modern Web Experiences"
           />
 
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-wider lg:text-2xl">
-            Hi, I&apos;m {links.ownerName}, a Next.js developer based in India.
+            Hi, I&apos;m {links.ownerName}, a passionate developer creating innovative web solutions.
           </p>
 
           <Link href="#about" className="md:mt-10">
             <MagicButton
-              title="Show my work"
+              title="View my work"
               icon={<FaLocationArrow />}
               position="right"
               asChild

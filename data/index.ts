@@ -3,14 +3,14 @@ import { links } from "@/config";
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ] as const;
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I prioritize client collaboration, fostering open communication",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -48,12 +48,11 @@ export const gridItems = [
     img: "/grid.svg",
     spareImg: "/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently building a Mern Chat Application",
-    subtitle: "ChitChat",
-    description: "The app will have real-time chat, video calls, and more.",
+    title: "Currently working on exciting projects",
+    subtitle: "Full Stack Development",
+    description: "Building modern web applications with cutting-edge technologies.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -75,67 +74,57 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "FigPro - Collaborative Design Tool",
-    des: "A collaborative design tool with real-time collaboration, vector editing, and a responsive UI.",
+    title: "E-Commerce Platform",
+    des: "A full-stack e-commerce platform with user authentication, payment integration, and admin dashboard.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://clone-figmaa.netlify.app",
-    sourceCode: "https://github.com/himanshuach/figma-clone",
+    link: "#",
+    sourceCode: "#",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
+    title: "Task Management App",
+    des: "A collaborative task management application with real-time updates and team collaboration features.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://clone-yoom.netlify.app",
-    sourceCode: "https://github.com/himanshuach/zoom-clone",
+    link: "#",
+    sourceCode: "#",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    title: "Portfolio Website",
+    des: "A modern portfolio website with 3D animations and interactive elements built with Next.js and Three.js.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://ai-imaginify.netlify.app",
-    sourceCode: "https://github.com/himanshuach/imaginify",
+    link: "#",
+    sourceCode: "#",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
+    title: "Weather Dashboard",
+    des: "A weather dashboard with real-time data, interactive maps, and responsive design for mobile and desktop.",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://app-iphone.netlify.app",
-    sourceCode: "https://github.com/himanshuach/apple-clone",
+    link: "#",
+    sourceCode: "#",
   },
 ] as const;
 
 export const testimonials = [
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: `Working with ${links.ownerName} was an excellent experience. His attention to detail and technical expertise helped deliver a project that exceeded our expectations.`,
+    name: "Sarah Johnson",
+    title: "Project Manager at TechCorp",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: `${links.ownerName} demonstrated exceptional problem-solving skills and delivered high-quality code that was both maintainable and scalable.`,
+    name: "Michael Chen",
+    title: "Senior Developer at InnovateLab",
   },
   {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote: `Collaborating with ${links.ownerName} was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. ${links.ownerName}'s enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, ${links.ownerName} is the ideal partner.`,
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    quote: `The collaboration with ${links.ownerName} was smooth and professional. He consistently met deadlines and provided valuable insights throughout the project.`,
+    name: "Emily Rodriguez",
+    title: "Product Owner at StartupXYZ",
   },
 ] as const;
 
@@ -175,29 +164,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Developer",
+    desc: "Developed responsive web applications using React.js and modern frontend technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "Full Stack Developer",
+    desc: "Built end-to-end web applications with Node.js, React, and MongoDB.",
+    className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
+    title: "UI/UX Developer",
+    desc: "Created interactive user interfaces with focus on accessibility and user experience.",
+    className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Lead Developer",
+    desc: "Led development teams and architected scalable web solutions.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -217,8 +206,8 @@ export const socialMedia = [
 ] as const;
 
 export const techStack = {
-  stack1: ["JavaScript","React.js", "Next.js", "Typescript"],
-  stack2: ["Express.js","MongoDB"],
+  stack1: ["JavaScript", "React.js", "Next.js", "TypeScript"],
+  stack2: ["Node.js", "Express.js", "MongoDB"],
   stack3: ["Tailwind CSS", "Three.js", "Framer Motion"],
-  stack4: ["Node.js", "Git", "Figma", "Postman"]
+  stack4: ["Git", "Figma", "Postman", "Docker"]
 } as const;

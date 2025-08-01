@@ -17,8 +17,8 @@ const MainPage = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-        <Clients />
         <Experience />
+        <Clients />
         <Approach />
         <Footer />
       </div>

@@ -3,9 +3,7 @@ import { Inter } from "next/font/google";
 import type { PropsWithChildren } from "react";
 
 import { siteConfig } from "@/config";
-
 import { ThemeProvider } from "./provider";
-
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
