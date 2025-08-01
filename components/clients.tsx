@@ -7,7 +7,7 @@ export const Clients = () => {
   return (
     <section id="clients" className="py-20">
       <h1 className="heading">
-        Companies I've <span className="text-purple">worked with</span>
+        Companies I&apos;ve <span className="text-purple">worked with</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
