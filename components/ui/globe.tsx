@@ -80,7 +80,6 @@ export const Globe = ({ globeConfig }: WorldProps) => {
         color={defaultProps.globeColor}
         emissive={defaultProps.emissive}
         emissiveIntensity={defaultProps.emissiveIntensity}
-        shininess={defaultProps.shininess}
         transparent
         opacity={0.8}
       />
