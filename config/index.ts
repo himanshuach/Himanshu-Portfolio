@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const links = {
-  sourceCode: "https://github.com/himanshuach/Himanshu_Portfolio.git",
+  sourceCode: "https://github.com/himanshuach/Himanshu-Portfolio.git",
   ownerName: "Himanshu Raj",
   ownerEmail: "himanshu.raj@example.com",
 } as const;
