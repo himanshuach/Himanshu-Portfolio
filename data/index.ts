@@ -176,20 +176,6 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
-  {
-    id: 3,
-    title: "UI/UX Developer",
-    desc: "Created interactive user interfaces with focus on accessibility and user experience.",
-    className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Developer",
-    desc: "Led development teams and architected scalable web solutions.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
 ] as const;
 
 export const socialMedia = [
