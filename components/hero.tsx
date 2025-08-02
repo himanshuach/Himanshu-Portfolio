@@ -72,7 +72,7 @@ export const Hero = () => {
                 {/* Row 1 */}
                 <div className="flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110">
-                    <img src="/js.svg" alt="JavaScript" className="w-8 h-8" />
+                    <img src="/re.svg" alt="React" className="w-8 h-8" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
@@ -82,19 +82,19 @@ export const Hero = () => {
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110">
-                    <img src="/react.svg" alt="React" className="w-8 h-8" />
+                    <img src="/re.svg" alt="React" className="w-8 h-8" />
                   </div>
                 </div>
 
                 {/* Row 2 */}
                 <div className="flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110">
-                    <img src="/node.svg" alt="Node.js" className="w-8 h-8" />
+                    <img src="/host.svg" alt="Node.js" className="w-8 h-8" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110">
-                    <img src="/mongo.svg" alt="MongoDB" className="w-8 h-8" />
+                    <img src="/c.svg" alt="MongoDB" className="w-8 h-8" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
@@ -111,12 +111,12 @@ export const Hero = () => {
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110">
-                    <img src="/tailwind.svg" alt="Tailwind CSS" className="w-8 h-8" />
+                    <img src="/tail.svg" alt="Tailwind CSS" className="w-8 h-8" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-110">
-                    <img src="/flutter.svg" alt="Flutter" className="w-8 h-8" />
+                    <img src="/fm.svg" alt="Flutter" className="w-8 h-8" />
                   </div>
                 </div>
               </div>
