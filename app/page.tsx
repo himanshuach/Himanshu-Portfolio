@@ -1,5 +1,4 @@
 import { Approach } from "@/components/approach";
-import { Clients } from "@/components/clients";
 import { Experience } from "@/components/experience";
 import { Footer } from "@/components/footer";
 import { Grid } from "@/components/grid";
@@ -18,7 +17,6 @@ const MainPage = () => {
         <Grid />
         <RecentProjects />
         <Experience />
-        <Clients />
         <Approach />
         <Footer />
       </div>

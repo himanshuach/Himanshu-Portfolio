@@ -125,14 +125,27 @@ export const workExperience = [
   {
     id: 1,
     title: "Frontend Developer",
-    desc: "Led the development of United Tours India's complete web platform, enhancing UI/UX by redesigning 20+ pages with Tailwind CSS. Implemented SEO optimization strategies using modern React toolkits, resulting in improved search engine rankings. Built a 100% functional web solution using React.js, delivering exceptional user experience. Optimized page performance by 30% through advanced JavaScript techniques and React optimization, significantly improving load times and user engagement.",
+    desc: [
+      "Led the development of United Tours India's complete web platform",
+      "Enhanced UI/UX by redesigning 20+ pages with Tailwind CSS",
+      "Implemented SEO optimization strategies using modern React toolkits",
+      "Built a 100% functional web solution using React.js",
+      "Optimized page performance by 30% through advanced JavaScript techniques"
+    ],
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
     title: "Designing Intern",
-    desc: "Enhanced UI/UX design for 5+ client projects, achieving 30% improvement in user engagement metrics through innovative design solutions. Implemented strategic design enhancements that boosted website performance and user retention by 20%. Designed and developed 20+ responsive web pages with modern design principles, maintaining a 95% client satisfaction rate. Collaborated with cross-functional teams to deliver high-quality design solutions that exceeded client expectations.",
+    desc: [
+      "Enhanced UI/UX design for 5+ client projects",
+      "Achieved 30% improvement in user engagement metrics",
+      "Implemented strategic design enhancements boosting performance by 20%",
+      "Designed and developed 20+ responsive web pages",
+      "Maintained 95% client satisfaction rate",
+      "Collaborated with cross-functional teams"
+    ],
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
@@ -153,21 +166,6 @@ export const socialLinks = [
     name: "LeetCode",
     icon: "/insta.svg",
     link: "https://leetcode.com/himanshuach",
-  },
-] as const;
-
-export const clients = [
-  {
-    id: 1,
-    name: "United Tours India",
-    img: "/c.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "Achilyon",
-    img: "/c.svg",
-    nameImg: "/cloudName.svg",
   },
 ] as const;
 
@@ -211,7 +209,7 @@ export const recentProjects = [
     id: "1",
     title: "Chat-App",
     des: "Real-time messaging application with user authentication and group chat functionality using MERN stack",
-    img: "/p1.svg",
+    img: "/collaboration.svg",
     iconLists: ["/re.svg", "/ts.svg", "/fm.svg"],
     link: "https://github.com/himanshuach/Chat-App",
   },
@@ -219,7 +217,7 @@ export const recentProjects = [
     id: "2",
     title: "KopyKitabh",
     des: "E-commerce platform for book purchases with comprehensive product management",
-    img: "/p2.svg",
+    img: "/collaboration.svg",
     iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
     link: "https://github.com/himanshuach/KopyKitabh",
   },
@@ -227,7 +225,7 @@ export const recentProjects = [
     id: "3",
     title: "LocalAIAgent",
     des: "Local AI agent with RAG implementation for knowledge retrieval and processing",
-    img: "/p3.svg",
+    img: "/collaboration.svg",
     iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
     link: "https://github.com/himanshuach/LocalAIAgent",
   },
@@ -235,7 +233,7 @@ export const recentProjects = [
     id: "4",
     title: "Teach-Do-It",
     des: "Educational website with interactive learning modules and content",
-    img: "/p4.svg",
+    img: "/collaboration.svg",
     iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
     link: "https://github.com/himanshuach/Teach-Do-It",
   },
@@ -243,7 +241,7 @@ export const recentProjects = [
     id: "5",
     title: "Bluechat",
     des: "Modern real-time chat application with responsive design",
-    img: "/p1.svg",
+    img: "/collaboration.svg",
     iconLists: ["/re.svg", "/ts.svg", "/fm.svg"],
     link: "https://github.com/himanshuach/Bluechat",
   },
@@ -251,7 +249,7 @@ export const recentProjects = [
     id: "6",
     title: "Reminder_app",
     des: "Flutter-based reminder app with clean UI and task management features",
-    img: "/p3.svg",
+    img: "/collaboration.svg",
     iconLists: ["/re.svg", "/ts.svg", "/tail.svg", "/fm.svg"],
     link: "https://github.com/himanshuach/Reminder-App",
   },
@@ -277,16 +275,6 @@ export const skills = [
     id: 4,
     title: "Tools & Platforms",
     skills: ["Git", "Postman", "VS Code", "Firebase"],
-  },
-] as const;
-
-export const education = [
-  {
-    id: 1,
-    institution: "Chandigarh University",
-    degree: "BE in Computer Science and Engineering",
-    duration: "July 2021 – May 2025",
-    coursework: "DSA, Operating Systems, Computer Networks, System Design",
   },
 ] as const;
 

@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { MagicButton } from "./magic-button";
+import { Button } from "./moving-borders";
 
 import { GridGlobe } from "../grid-globe";
 
@@ -73,16 +74,13 @@ export const BentoGridItem = ({
   }, [copied]);
 
   return (
-    <div
+    <Button
+      borderRadius="1.75rem"
       className={cn(
-        "group/bento relative row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-3xl border border-white/[0.1] shadow-input transition duration-200 hover:shadow-xl dark:shadow-none",
+        "group/bento relative row-span-1 flex flex-col justify-between space-y-4 overflow-hidden shadow-input transition duration-200 hover:shadow-xl dark:shadow-none",
         className
       )}
-      style={{
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
+      duration={Math.floor(Math.random() * 10000 + 10000)}
     >
       <div className={cn("h-full", id === 6 && "flex justify-center")}>
         <div className="absolute h-full w-full">
@@ -190,6 +188,6 @@ export const BentoGridItem = ({
           )}
         </div>
       </div>
-    </div>
+    </Button>
   );
 };

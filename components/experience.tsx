@@ -15,7 +15,7 @@ export const Experience = () => {
           <Button
             key={experience.id}
             borderRadius="1.75rem"
-            className="flex-1 border-neutral-200 text-white dark:border-slate-800"
+            className="flex-1 border-neutral-200 text-white dark:border-slate-800" 
             duration={Math.floor(Math.random() * 10000 + 10000)}
           >
             <div className="flex flex-col gap-2 p-3 py-6 md:p-5 lg:flex-row lg:items-center lg:p-10">
@@ -31,9 +31,21 @@ export const Experience = () => {
                 <h1 className="text-start text-xl font-bold md:text-2xl">
                   {experience.title}
                 </h1>
-                <p className="mt-3 text-start font-semibold text-white-100">
-                  {experience.desc}
-                </p>
+                <ul className="mt-3 text-start font-semibold text-white-100 space-y-2">
+                  {Array.isArray(experience.desc) ? (
+                    experience.desc.map((item, index) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-purple-400 mr-2 mt-1">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))
+                  ) : (
+                    <li className="flex items-start">
+                      <span className="text-purple-400 mr-2 mt-1">•</span>
+                      <span>{experience.desc}</span>
+                    </li>
+                  )}
+                </ul>
               </div>
             </div>
           </Button>
