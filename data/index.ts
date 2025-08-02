@@ -159,13 +159,8 @@ export const socialLinks = [
   },
   {
     name: "LinkedIn",
-    icon: "/twit.svg",
+    icon: "/link.svg",
     link: "https://linkedin.com/in/himanshuach",
-  },
-  {
-    name: "LeetCode",
-    icon: "/insta.svg",
-    link: "https://leetcode.com/himanshuach",
   },
 ] as const;
 
