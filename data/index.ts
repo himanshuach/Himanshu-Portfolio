@@ -10,7 +10,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "Full Stack Developer skilled in ReactJS, Node.js, and UI/UX design",
+    title: "Full Stack Developer",
     description: "Passionate about building scalable, responsive, and user-friendly web applications",
     className: "lg:col-span-4 md:col-span-4 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -31,7 +31,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "Always learning and exploring new technologies",
+    description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -41,7 +41,7 @@ export const gridItems = [
   {
     id: 4,
     title: "Passionate about creating innovative solutions",
-    description: "Building modern web applications with cutting-edge technologies",
+    description: "",
     className: "lg:col-span-2 md:col-span-2 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -51,7 +51,7 @@ export const gridItems = [
   {
     id: 5,
     title: "Currently working on Chat App using MERN Stack",
-    description: "Real-time messaging with user authentication and group chats",
+    description: "",
     className: "lg:col-span-4 md:col-span-4 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { Spotlight } from "@/components/ui/spotlight";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { MagicButton } from "@/components/ui/magic-button";
 import { links } from "@/config";
 
@@ -22,47 +21,32 @@ export const Hero = () => {
       </div>
 
       <div className="relative z-10 flex min-h-screen w-full items-center justify-center bg-black-100 bg-grid-white/[0.02] bg-cover bg-center bg-no-repeat">
-        <div className="flex w-full max-w-[89rem] flex-col items-center justify-center px-4 lg:px-0">
-          {/* 3D Cube Section */}
-          <div className="absolute left-10 top-1/2 transform -translate-y-1/2 hidden lg:block">
-            <div className="relative w-64 h-64">
-              {/* 3D Cube */}
-              <div className="absolute inset-0 transform rotate-45">
-                <div className="w-full h-full border-2 border-blue-400/30 rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10 backdrop-blur-sm">
-                  {/* Cube Content */}
-                  <div className="absolute inset-2 flex items-center justify-center">
-                    <div className="text-4xl font-bold text-blue-400">JS</div>
-                  </div>
-                  {/* Decorative Elements */}
-                  <div className="absolute top-4 left-4 w-8 h-8 bg-green-400/30 rounded-full"></div>
-                  <div className="absolute bottom-4 right-4 w-6 h-6 bg-purple-400/30 rounded-full"></div>
-                  <div className="absolute top-1/2 left-2 w-4 h-4 bg-blue-400/30 rounded-full"></div>
-                </div>
-              </div>
+        <div className="flex w-full max-w-[89rem] items-center justify-between px-4 lg:px-0">
+          {/* Left Content */}
+          <div className="flex-1 max-w-2xl">
+            {/* Tagline */}
+            <div className="mb-6 inline-flex items-center rounded-full border border-purple-500/20 bg-purple-500/10 px-4 py-2 text-sm font-medium text-purple-300">
+              <span className="mr-2">⚡</span>
+              Fullstack Developer Portfolio
             </div>
-          </div>
 
-          {/* Main Content */}
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="mb-6 text-6xl font-bold leading-tight text-white md:text-7xl lg:text-8xl">
-              <span className="text-blue-400">Hi, I&apos;m </span>
-              <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-                {links.ownerName}!
-              </span>
+            {/* Main Headline */}
+            <h1 className="mb-6 text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+              Providing the
+                best{" "}
+              project experience.
             </h1>
 
-            <h2 className="mb-6 text-2xl font-semibold text-gray-300 md:text-3xl">
-              A Full Stack Developer
-            </h2>
-
-            <p className="mb-8 text-lg text-gray-400 md:text-xl max-w-2xl mx-auto">
-            Passionate about building scalable, responsive, and user-friendly web applications.
+            {/* Description */}
+            <p className="mb-8 text-base text-gray-300 md:text-lg">
+              I'm a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check out my projects and skills.
             </p>
 
-            <div className="mb-8 flex flex-col items-center gap-4 sm:flex-row">
+            {/* Call to Action */}
+            <div className="flex flex-col items-start gap-4 sm:flex-row">
               <Link href={links.github} target="_blank">
                 <MagicButton
-                  title="View My Work"
+                  title="Learn more"
                   icon={<FaLocationArrow />}
                   position="right"
                 />
@@ -70,21 +54,67 @@ export const Hero = () => {
             </div>
           </div>
 
-          {/* Bottom Line */}
-          <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 text-center">
-            <div className="flex items-center gap-4">
-              <div className="w-16 h-px bg-gray-400"></div>
-              <span className="text-sm text-gray-400 uppercase tracking-wider">
-                Full-Stack Web Developer Portfolio
-              </span>
-              <div className="w-16 h-px bg-gray-400"></div>
-            </div>
-          </div>
+          {/* Right Side - Technology Icons */}
+          <div className="hidden lg:flex flex-1 justify-end">
+            <div className="relative w-96 h-96">
+              {/* Grid Background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 to-transparent rounded-2xl border border-gray-800/50 backdrop-blur-sm">
+                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
+              </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
-              <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
+              {/* Technology Icons Grid */}
+              <div className="absolute inset-0 p-8 grid grid-cols-3 gap-6">
+                {/* Row 1 */}
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/js.svg" alt="JavaScript" className="w-6 h-6" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/ts.svg" alt="TypeScript" className="w-6 h-6" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/react.svg" alt="React" className="w-6 h-6" />
+                  </div>
+                </div>
+
+                {/* Row 2 */}
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/node.svg" alt="Node.js" className="w-6 h-6" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/mongo.svg" alt="MongoDB" className="w-6 h-6" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/next.svg" alt="Next.js" className="w-6 h-6" />
+                  </div>
+                </div>
+
+                {/* Row 3 */}
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/git.svg" alt="Git" className="w-6 h-6" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/tailwind.svg" alt="Tailwind CSS" className="w-6 h-6" />
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
+                    <img src="/flutter.svg" alt="Flutter" className="w-6 h-6" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
