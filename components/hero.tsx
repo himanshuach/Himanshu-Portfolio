@@ -20,6 +20,20 @@ export const Hero = () => {
         <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
+      {/* Glowing Purple Ring Effect */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative w-[800px] h-[800px]">
+          {/* Outer Ring */}
+          <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 blur-3xl animate-pulse"></div>
+          {/* Middle Ring */}
+          <div className="absolute inset-8 rounded-full bg-gradient-to-r from-purple-400/30 to-pink-400/30 blur-2xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          {/* Inner Ring */}
+          <div className="absolute inset-16 rounded-full bg-gradient-to-r from-purple-300/40 to-pink-300/40 blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          {/* Core Glow */}
+          <div className="absolute inset-24 rounded-full bg-gradient-to-r from-purple-200/50 to-pink-200/50 blur-lg animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        </div>
+      </div>
+
       <div className="relative z-10 flex min-h-screen w-full items-center justify-center bg-black-100 bg-grid-white/[0.02] bg-cover bg-center bg-no-repeat">
         <div className="flex w-full max-w-[89rem] items-center justify-between px-4 lg:px-0">
           {/* Left Content */}
@@ -32,8 +46,8 @@ export const Hero = () => {
 
             {/* Main Headline */}
             <h1 className="mb-6 text-3xl font-bold leading-tight text-white md:text-5xl lg:text-6xl">
-              Providing the
-                best{" "}
+              Providing the{" "}
+                best
               project experience.
             </h1>
 
@@ -49,6 +63,7 @@ export const Hero = () => {
                   title="Learn more"
                   icon={<FaLocationArrow />}
                   position="right"
+                  asChild={true}
                 />
               </Link>
             </div>
@@ -63,55 +78,55 @@ export const Hero = () => {
               </div>
 
               {/* Technology Icons Grid */}
-              <div className="absolute inset-0 p-8 grid grid-cols-3 gap-6">
+              <div className="absolute inset-0 p-6 grid grid-cols-3 gap-4">
                 {/* Row 1 */}
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/js.svg" alt="JavaScript" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/js.svg" alt="JavaScript" className="w-7 h-7" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/ts.svg" alt="TypeScript" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/ts.svg" alt="TypeScript" className="w-7 h-7" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/react.svg" alt="React" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/react.svg" alt="React" className="w-7 h-7" />
                   </div>
                 </div>
 
                 {/* Row 2 */}
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/node.svg" alt="Node.js" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/node.svg" alt="Node.js" className="w-7 h-7" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/mongo.svg" alt="MongoDB" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/mongo.svg" alt="MongoDB" className="w-7 h-7" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/next.svg" alt="Next.js" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/next.svg" alt="Next.js" className="w-7 h-7" />
                   </div>
                 </div>
 
                 {/* Row 3 */}
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/git.svg" alt="Git" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/git.svg" alt="Git" className="w-7 h-7" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/tailwind.svg" alt="Tailwind CSS" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/tailwind.svg" alt="Tailwind CSS" className="w-7 h-7" />
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center border border-white/20">
-                    <img src="/flutter.svg" alt="Flutter" className="w-6 h-6" />
+                  <div className="w-14 h-14 bg-white/10 rounded-lg flex items-center justify-center border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/flutter.svg" alt="Flutter" className="w-7 h-7" />
                   </div>
                 </div>
               </div>
