@@ -21,8 +21,35 @@ export const Experience = () => {
                       {item.role}
                     </h3>
                     <p className="pt-1 text-base text-portfolio-text">
-                      {item.company}
+                      {item.companyUrl ? (
+                        <a
+                          href={item.companyUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="transition-colors hover:text-portfolio-highlight"
+                        >
+                          {item.company}
+                        </a>
+                      ) : (
+                        item.company
+                      )}
+                      {item.location && (
+                        <span className="text-portfolio-muted">
+                          {" "}
+                          | {item.location}
+                        </span>
+                      )}
                     </p>
+                    {item.liveUrl && (
+                      <a
+                        href={item.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-1 inline-block font-mono text-[12px] tracking-[0.6px] text-portfolio-accent transition-colors hover:text-portfolio-highlight"
+                      >
+                        Live: {item.liveUrl.replace(/^https?:\/\//, "")}
+                      </a>
+                    )}
                   </div>
                   <span className="inline-flex w-fit rounded-xl border border-portfolio-border px-[13px] py-[5px] font-mono text-[12px] font-medium tracking-[0.6px] text-portfolio-muted">
                     {item.period}

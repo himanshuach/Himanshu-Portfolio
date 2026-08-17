@@ -32,9 +32,3 @@ const config = {
 } satisfies Config;
 
 export default config;
-
-/*
- * LEGACY TAILWIND CONFIG — archived during Figma redesign
- * Previous config included three.js animation utilities, mini-svg-data-uri grid
- * patterns, and extended shadcn color tokens. See `_legacy/README.md`.
- */

@@ -4,7 +4,7 @@ export const links = {
   sourceCode: "https://github.com/himanshuach/Himanshu-Portfolio.git",
   ownerName: "Himanshu Raj",
   ownerEmail: "himanshuach.842@gmail.com",
-  phone: "+91 7634814232",
+  phone: "+91 9470283413",
   linkedin: "https://linkedin.com/in/himanshuach",
   github: "https://github.com/himanshuach",
   leetcode: "https://leetcode.com/himanshuach",

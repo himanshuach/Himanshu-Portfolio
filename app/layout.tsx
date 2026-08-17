@@ -40,13 +40,3 @@ const RootLayout = ({ children }: Readonly<PropsWithChildren>) => {
 };
 
 export default RootLayout;
-
-/*
- * LEGACY LAYOUT — ThemeProvider removed in favor of fixed dark theme
- *
- * import { ThemeProvider } from "./provider";
- *
- * <ThemeProvider attribute="class" defaultTheme="dark" forcedTheme="dark">
- *   {children}
- * </ThemeProvider>
- */

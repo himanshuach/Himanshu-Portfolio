@@ -6,6 +6,7 @@ export const navItems = [
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
   { name: "Tech Stack", href: "#tech-stack" },
+  { name: "Education", href: "#education" },
 ] as const;
 
 export const heroContent = {
@@ -38,29 +39,40 @@ export type PortfolioProject = {
 
 export const projects: readonly PortfolioProject[] = [
   {
-    id: "chat-app",
+    id: "payment-gateway",
     number: "01",
+    title: "3rd Party Payment Gateway API Integration",
+    description:
+      "Designed and developed RESTful payment APIs for initiation, status tracking, and transactions. Implemented a mock payment workflow with real-time monitoring using Supabase.",
+    tags: ["Python", "FastAPI", "Supabase", "REST APIs", "Redis"],
+    layout: "featured-alt",
+    icon: "external",
+  },
+  {
+    id: "chat-app",
+    number: "02",
     title: "Chat-App",
     description:
-      "A real-time messaging platform engineered for low latency and high concurrency, featuring end-to-end encryption and a modern interface.",
-    tags: ["React", "Node.js", "Socket.io"],
+      "Real-time MERN stack application featuring user authentication, real-time messaging, and group chats.",
+    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "JWT"],
     link: "https://github.com/himanshuach/Chat-App",
     image: "/projects/chat-app.png",
     layout: "featured-large",
   },
   {
     id: "kopykitabh",
-    number: "02",
+    number: "03",
     title: "KopyKitabh",
-    description: "Digital learning resource aggregator.",
-    tags: ["Next.js", "MongoDB"],
+    description:
+      "An e-commerce website for buying books with product listings and details.",
+    tags: ["HTML", "CSS", "JavaScript"],
     link: "https://github.com/himanshuach/KopyKitabh",
     image: "/projects/kopykitabh.png",
     layout: "compact",
   },
   {
     id: "local-ai-agent",
-    number: "03",
+    number: "04",
     title: "LocalAIAgent",
     description:
       "An autonomous agent system designed to run entirely locally, prioritizing data privacy and offline capabilities while maintaining advanced reasoning.",
@@ -71,7 +83,7 @@ export const projects: readonly PortfolioProject[] = [
   },
   {
     id: "teach-do-it",
-    number: "04",
+    number: "05",
     title: "Teach-Do-It",
     description:
       "Interactive tutorial platform bridging the gap between theoretical learning and practical implementation.",
@@ -82,7 +94,7 @@ export const projects: readonly PortfolioProject[] = [
   },
   {
     id: "bluechat",
-    number: "05",
+    number: "06",
     title: "Bluechat",
     description: "Secure peer-to-peer communication tool.",
     tags: ["WebRTC", "React"],
@@ -92,7 +104,7 @@ export const projects: readonly PortfolioProject[] = [
   },
   {
     id: "reminder-app",
-    number: "06",
+    number: "07",
     title: "Reminder_app",
     description: "Task management with intelligent scheduling.",
     tags: ["Svelte", "Tailwind"],
@@ -106,28 +118,54 @@ export type ExperienceItem = {
   id: string;
   role: string;
   company: string;
+  location?: string;
   period: string;
+  companyUrl?: string;
+  liveUrl?: string;
   highlights: readonly string[];
 };
 
 export const experiences: readonly ExperienceItem[] = [
   {
-    id: "frontend-developer",
-    role: "Frontend Developer",
-    company: "United Tours India",
-    period: "Present",
+    id: "obrive",
+    role: "Full Stack Intern",
+    company: "OBRive",
+    location: "Remote",
+    period: "June 2026 – July 2026",
     highlights: [
-      "Engineered responsive, high-performance web interfaces using modern frontend frameworks.",
-      "Optimized load times and improved core web vitals for the main consumer platform.",
-      "Collaborated cross-functionally to integrate complex APIs and robust state management.",
+      "Developed responsive web interfaces from Figma designs using Next.js, React, TypeScript, and Tailwind CSS.",
+      "Built reusable UI components and collaborated with designers.",
     ],
   },
   {
-    id: "design-intern",
+    id: "weber-technologies",
+    role: "Full Stack Intern",
+    company: "Weber Technologies",
+    period: "Sep 2025 – Dec 2025",
+    liveUrl: "https://ll-ten-ivory.vercel.app",
+    highlights: [
+      "Built and optimized full-stack web applications using React, TypeScript, Supabase, and Tailwind CSS.",
+      "Designed responsive landing pages and implemented UI components with shadcn/ui and animations.",
+    ],
+  },
+  {
+    id: "united-tours-india",
+    role: "Frontend Developer",
+    company: "United Tours India",
+    period: "Jan 2025 – Apr 2025",
+    companyUrl: "https://unitedtoursindia.com",
+    highlights: [
+      "Redesigned 20+ pages using React and Tailwind CSS, focusing on UI/UX, SEO, and performance optimization (lazy loading, memoization).",
+    ],
+  },
+  {
+    id: "achilyon",
     role: "Designing Intern",
     company: "Achilyon",
-    period: "Past",
+    location: "Remote",
+    period: "Sep 2024 – Dec 2024",
     highlights: [
+      "Developed 20+ responsive web pages with a focus on usability.",
       "Assisted in shaping the digital identity and UI/UX design language for core products.",
       "Developed high-fidelity prototypes, wireframes, and user flows to communicate interaction concepts.",
       "Contributed to the creation and maintenance of a unified design system.",
@@ -145,27 +183,89 @@ export const techStack: readonly TechCategory[] = [
   {
     id: "frontend",
     title: "FRONTEND",
-    skills: ["React", "Next.js", "Vue.js", "Svelte", "Tailwind CSS"],
+    skills: [
+      "React.js",
+      "Next.js",
+      "React Native",
+      "Tailwind CSS",
+      "Flutter",
+      "HTML5",
+      "CSS3",
+      "Bootstrap",
+      "shadcn/ui",
+      "Vue.js",
+      "Svelte",
+    ],
   },
   {
     id: "backend",
     title: "BACKEND",
-    skills: ["Node.js", "MongoDB", "Firebase", "Socket.io"],
+    skills: [
+      "FastAPI",
+      "Node.js",
+      "REST APIs",
+      "JWT Authentication",
+      "Supabase",
+      "MongoDB",
+      "Firebase",
+      "Socket.io",
+    ],
   },
   {
     id: "languages",
     title: "LANGUAGES",
-    skills: ["JavaScript", "TypeScript", "Python", "HTML/CSS"],
+    skills: ["Python", "JavaScript", "TypeScript", "C++", "C", "Dart", "HTML/CSS"],
   },
   {
     id: "ai-data",
-    title: "AI & DATA",
-    skills: ["LLMs", "LangChain", "Vector DBs", "Pandas"],
+    title: "AI & DATABASES",
+    skills: [
+      "LLM Integration",
+      "RAG",
+      "AI Agents",
+      "Prompt Engineering",
+      "MongoDB",
+      "PostgreSQL",
+      "LLMs",
+      "LangChain",
+      "Vector DBs",
+      "Pandas",
+    ],
   },
   {
     id: "tools",
     title: "TOOLS & PLATFORMS",
-    skills: ["Git", "Docker", "WebRTC", "Figma", "AWS"],
+    skills: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Postman",
+      "VS Code",
+      "Render",
+      "Vercel",
+      "Firebase",
+      "Netlify",
+      "Docker",
+      "WebRTC",
+      "Figma",
+      "AWS",
+    ],
+  },
+] as const;
+
+export type EducationItem = {
+  id: string;
+  degree: string;
+  institution: string;
+  period: string;
+};
+
+export const education: readonly EducationItem[] = [
+  {
+    id: "chandigarh-university",
+    degree: "BE in Computer Science and Engineering",
+    institution: "Chandigarh University",
+    period: "July 2021 – May 2025",
   },
 ] as const;
 
