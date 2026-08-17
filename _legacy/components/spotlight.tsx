@@ -1,3 +1,8 @@
+/**
+ * @deprecated LEGACY — archived during Figma redesign (Aug 2026)
+ * See `_legacy/README.md`. Not imported by the new build.
+ */
+
 import { cn } from "@/lib/utils";
 
 type SpotlightProps = {

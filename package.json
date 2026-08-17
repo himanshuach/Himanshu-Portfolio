@@ -1,6 +1,6 @@
 {
-  "name": "Himanshu-portfolio",
-  "version": "1.0.0",
+  "name": "himanshu-portfolio",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,47 +11,35 @@
   },
   "author": {
     "name": "Himanshu Raj",
-    "email": "himanshu.raj@example.com",
+    "email": "himanshuach.842@gmail.com",
     "url": "https://github.com/himanshuach"
   },
-  "description": "A modern, responsive portfolio website built with Next.js and React",
+  "description": "Modern TypeScript portfolio built with Next.js and Tailwind CSS",
   "keywords": [
     "nextjs",
     "react",
     "typescript",
     "tailwindcss",
-    "portfolio",
-    "threejs",
-    "framer-motion"
+    "portfolio"
   ],
   "license": "MIT",
   "dependencies": {
-    "@react-three/drei": "^9.122.0",
-    "@react-three/fiber": "^8.18.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.6",
-    "mini-svg-data-uri": "^1.4.4",
-    "next": "14.2.15",
-    "next-themes": "^0.3.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-icons": "^5.2.1",
-    "react-lottie": "^1.2.10",
-    "sharp": "^0.34.3",
-    "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7",
-    "three": "^0.164.1"
+    "lucide-react": "^0.511.0",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/react-lottie": "^1.2.10",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3",
-    "postcss": "^8",
-    "prettier-plugin-tailwindcss": "^0.5.14",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.5",
+    "@types/react-dom": "^19.1.5",
+    "eslint": "^9.27.0",
+    "eslint-config-next": "^15.3.3",
+    "postcss": "^8.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.8.3"
   }
 }

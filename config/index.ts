@@ -11,26 +11,19 @@ export const links = {
 } as const;
 
 export const siteConfig: Metadata = {
-  title: `${links.ownerName}'s Portfolio`,
-  description: "Full Stack Developer skilled in ReactJS, Node.js, and UI/UX design. Passionate about building scalable, responsive, and user-friendly web applications.",
+  title: `${links.ownerName} | Frontend-Focused Full Stack Developer`,
+  description:
+    "Portfolio of Himanshu Raj — frontend-focused full stack developer building intelligent interfaces, AI engineering projects, and high-performance web experiences.",
   keywords: [
     "fullstack",
-    "reactjs",
-    "nodejs",
+    "frontend",
+    "typescript",
     "nextjs",
     "react",
-    "javascript",
-    "typescript",
-    "mongodb",
-    "express",
-    "tailwindcss",
+    "ai engineering",
     "portfolio",
     "web development",
-    "frontend",
-    "threejs",
-    "framer-motion",
-    "backend",
-    "mern stack"
+    "tailwindcss",
   ],
   authors: {
     name: links.ownerName,

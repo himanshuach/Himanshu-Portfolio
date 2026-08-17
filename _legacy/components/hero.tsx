@@ -1,3 +1,8 @@
+/**
+ * @deprecated LEGACY — archived during Figma redesign (Aug 2026)
+ * See `_legacy/README.md`. Not imported by the new build.
+ */
+
 import Link from "next/link";
 import { FaLocationArrow } from "react-icons/fa6";
 
@@ -43,7 +48,7 @@ export const Hero = () => {
 
             {/* Description */}
             <p className="mb-10 text-lg text-gray-300 md:text-xl">
-              I'm a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check out my projects and skills.
+              I am a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check out my projects and skills.
             </p>
 
             {/* Call to Action */}
