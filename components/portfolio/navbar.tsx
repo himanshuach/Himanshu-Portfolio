@@ -65,7 +65,7 @@ export const Navbar = () => {
         </ul>
 
         <a
-          href="/resume.pdf"
+          href="/Himanshu_Dev_1Y0E.pdf"
           className="border border-white/20 px-[17px] py-2 text-xs font-medium uppercase tracking-[0.6px] text-portfolio-highlight transition-colors hover:border-portfolio-accent hover:text-white"
         >
           Resume
