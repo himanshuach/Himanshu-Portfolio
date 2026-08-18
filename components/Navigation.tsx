@@ -35,18 +35,18 @@ export const Navigation: React.FC<NavigationProps> = ({
 
   return (
     <header className="fixed top-4 inset-x-0 z-50 px-4 sm:px-6">
-      <nav className="max-w-[1100px] mx-auto nav-dock rounded-2xl px-5 py-3 flex items-center justify-between shadow-2xl border border-white/10">
+      <nav className="max-w-[1100px] mx-auto nav-dock rounded-2xl px-3 py-3 sm:px-5 flex items-center justify-between shadow-2xl border border-white/10">
         {/* Brand logo */}
         <button
           onClick={() => onNavigate('hero')}
-          className="flex items-center gap-2.5 font-sora font-extrabold text-lg tracking-tight text-[#dbfcff] group cursor-pointer"
+          className="flex min-w-0 items-center gap-2.5 font-sora font-extrabold text-lg tracking-tight text-[#dbfcff] group cursor-pointer"
         >
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#2fd9f4] to-[#8083ff] p-0.5 flex items-center justify-center shadow-lg shadow-[#2fd9f4]/20 group-hover:scale-105 transition-transform">
             <div className="w-full h-full bg-[#0c1324] rounded-[7px] flex items-center justify-center text-[#2fd9f4]">
               <Terminal className="w-4 h-4" />
             </div>
           </div>
-          <span>
+          <span className="hidden sm:inline">
             Himanshu <span className="text-[#2fd9f4] font-normal">Raj</span>
           </span>
         </button>
@@ -73,13 +73,14 @@ export const Navigation: React.FC<NavigationProps> = ({
         </ul>
 
         {/* Resume Button & Mobile Toggle */}
-        <div className="flex items-center gap-3">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <button
             onClick={onResumeClick}
-            className="neon-btn px-4 py-2 rounded-xl text-xs font-inter uppercase tracking-wider flex items-center gap-1.5 cursor-pointer shadow-md"
+            className="neon-btn p-2 sm:px-4 sm:py-2 rounded-xl text-xs font-inter uppercase tracking-wider flex items-center gap-1.5 cursor-pointer shadow-md"
+            aria-label="Open resume"
           >
             <FileText className="w-3.5 h-3.5" />
-            <span>Resume</span>
+            <span className="hidden sm:inline">Resume</span>
           </button>
 
           {/* Mobile menu toggle button */}

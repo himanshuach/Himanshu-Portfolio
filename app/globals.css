@@ -15,11 +15,24 @@
     color-scheme: dark;
   }
 
+  html {
+    width: 100%;
+    overflow-x: clip;
+  }
+
   body {
+    width: 100%;
+    min-width: 320px;
     background-color: #0c1324;
     color: #dce1fb;
     font-family: var(--font-inter), sans-serif;
-    overflow-x: hidden;
+    overflow-x: clip;
+  }
+
+  canvas,
+  img,
+  object {
+    max-width: 100%;
   }
 }
 
