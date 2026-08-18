@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { NavSection } from '../types';
-import { Menu, X, FileText, Sparkles, Terminal } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X, FileText, Sparkles } from 'lucide-react';
 
 interface NavigationProps {
   activeSection: NavSection;
@@ -41,9 +42,15 @@ export const Navigation: React.FC<NavigationProps> = ({
           onClick={() => onNavigate('hero')}
           className="flex min-w-0 items-center gap-2.5 font-sora font-extrabold text-lg tracking-tight text-[#dbfcff] group cursor-pointer"
         >
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#2fd9f4] to-[#8083ff] p-0.5 flex items-center justify-center shadow-lg shadow-[#2fd9f4]/20 group-hover:scale-105 transition-transform">
-            <div className="w-full h-full bg-[#0c1324] rounded-[7px] flex items-center justify-center text-[#2fd9f4]">
-              <Terminal className="w-4 h-4" />
+          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#2fd9f4] to-[#8083ff] p-0.5 flex items-center justify-center shadow-lg shadow-[#2fd9f4]/20 group-hover:scale-105 transition-transform">
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <Image
+                src="/projects/Himanshu.jpeg"
+                alt="Himanshu Raj"
+                width={36}
+                height={36}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <span className="hidden sm:inline">

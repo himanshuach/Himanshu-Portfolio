@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { NavSection } from '../types';
-import { ArrowUp, Terminal } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
+import Image from 'next/image';
 import { links } from '../config';
 
 interface FooterProps {
@@ -19,9 +20,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
         {/* Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#2fd9f4] to-[#8083ff] p-0.5 flex items-center justify-center shadow-lg shadow-[#2fd9f4]/20">
-            <div className="w-full h-full bg-[#0c1324] rounded-[7px] flex items-center justify-center text-[#2fd9f4]">
-              <Terminal className="w-4 h-4" />
+          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-[#2fd9f4] to-[#8083ff] p-0.5 flex items-center justify-center shadow-lg shadow-[#2fd9f4]/20">
+            <div className="w-full h-full rounded-full overflow-hidden">
+              <Image
+                src="/projects/Himanshu.jpeg"
+                alt="Himanshu Raj"
+                width={36}
+                height={36}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           <div>
