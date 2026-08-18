@@ -287,7 +287,7 @@ export const AIEngineeringSection: React.FC<AIEngineeringSectionProps> = ({
               System Architecture Canvas
             </h3>
             <p className="font-jetbrains text-[12px] font-medium uppercase tracking-widest text-[#2fd9f4]">
-              Neural Pathway Visualization Active // Hover to Interact
+              Neural Pathway Visualization Active {"//"} Hover to Interact
             </p>
           </div>
 
@@ -304,7 +304,7 @@ export const AIEngineeringSection: React.FC<AIEngineeringSectionProps> = ({
               </span>
             </div>
             <div className="text-[10px] text-[#89ceff]">
-              FPS: {fps} // REALTIME
+              FPS: {fps} {"//"} REALTIME
             </div>
           </div>
         </div>

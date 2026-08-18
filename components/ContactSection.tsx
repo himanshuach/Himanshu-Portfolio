@@ -142,7 +142,7 @@ export const ContactSection: React.FC = () => {
           {/* Professional Network Links */}
           <div className="glass-panel rounded-2xl border border-[rgba(255,255,255,0.08)] p-6 sm:p-8">
             <span className="font-jetbrains mb-4 block text-xs font-semibold uppercase tracking-wider text-[#2fd9f4]">
-              // Online Presence & Profiles
+              {"//"} Online Presence & Profiles
             </span>
 
             <div className="grid grid-cols-2 gap-3">
