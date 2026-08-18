@@ -5,7 +5,7 @@ export const links = {
   ownerName: "Himanshu Raj",
   ownerEmail: "himanshuach.842@gmail.com",
   phone: "+91 9470283413",
-  linkedin: "https://linkedin.com/in/himanshuach",
+  linkedin: "https://linkedin.com/in/r-himanshu",
   github: "https://github.com/himanshuach",
   leetcode: "https://leetcode.com/himanshuach",
 } as const;
