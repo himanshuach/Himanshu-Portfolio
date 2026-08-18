@@ -74,7 +74,7 @@ export function App() {
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         <AuroraShaderBackground className="w-full h-full opacity-70" />
         {/* Soft vignette and radial gradient depth */}
-        <div className="absolute inset-0 bg-radial from-transparent via-[#0c1324]/40 to-[#0c1324]/85 pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(12,19,36,0.4)_50%,rgba(12,19,36,0.85)_100%)] pointer-events-none" />
       </div>
 
       {/* Ambient Lighting Blurs */}

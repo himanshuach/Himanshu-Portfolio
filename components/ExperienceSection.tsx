@@ -31,7 +31,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({
       </header>
 
       {/* Experience Timeline */}
-      <div className="max-w-4xl space-y-6">
+      <div className="w-full space-y-6">
         {experiences.map((exp) => (
           <article
             key={exp.id}
